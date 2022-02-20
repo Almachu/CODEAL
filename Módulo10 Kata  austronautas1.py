@@ -1,0 +1,12 @@
+def water_left(astronauts, water_left, days_left):
+    daily_usage = astronauts * 11
+    total_usage = daily_usage * days_left
+    total_water_left = water_left - total_usage
+    return f"Total water left after {days_left} days is: {total_water_left} liters"
+
+print(water_left(5, 100, 2))
+
+###
+#Total water left after 2 days is: -10 liters
+#Encontre una variable que se llama igual que la función "water_left"
+###
